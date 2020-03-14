@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portólio Line</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="pc.png">
+
+  <script src="ckeditor/ckeditor.js"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link href="css/album.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://coolcarousels.frebsite.nl/c/2/jquery.carouFredSel-5.5.5-packed.js"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar { margin-bottom: 10; border-radius: 10;}
+
+    /* Add a gray background color and some padding to the footer */
+      footer { background-image: url('índice.jpg'); clear:both; 
+      width:200px; margin:0 auto; 
+      font-size:0.95em; text-align:center; 
+      background-color:#ECECEC; padding:0px }
+      
+    /*.carousel-inner img {min-height: 100px;}*/
+
+  .portfolio{
+  background-image:url("índice.jpg");;
+    background-repeat: inherit;/*round = volta*/
+      color: ;
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0; }
+
+  div.gallery {border: 1px solid #ccc;}
+
+  div.gallery:hover {border: 1px solid #0000ff;}
+
+div.gallery img {width: 100%;height: auto;}
+
+div.desc { padding: 15px;text-align: center;}
+
+* {box-sizing: border-box;}
+
+.responsive {padding: 0 6px;float: left;width: 24.99999%;}
+
+@media only screen and (max-width: 700px){
+    .responsive {width: 49.99999%;margin: 6px 0;}}
+
+@media only screen and (max-width: 500px){
+    .responsive {width: 100%;}}
+
+.clearfix:after {content: "";display: table;clear: both;}
+
+.responsive {padding: 0 6px;float: top;width: 24.99999%;}
+
+.embed-responsive-100x400px{padding-bottom: 350px;}
+.clearfix:after {content: "";display: table;clear: both;}
+
+.embed-responsive-100x400px{padding-bottom: 350px;}
+    .section {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+  </style>
+  <!--<div class="container">
+ <div class="alert alert-warning">
+  <strong>Warning!</strong>Esse é meu portfolio do TCD 2017 com ele você saberá mais sobre mim.-->
+
+  <div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Bem-vindo ao portfolio online</strong>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".close").click(function(){
+        $("#myAlert").alert("close");
+        alert('The alert message is about to be closed.');
+    });
+});
+   
+</script>
+
+<header class="w3-container-fluid w3-content w3-center" style="max-width:2000px">
+   <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3"> </div>
+    <div class="col-md-3"> </div>
+    <div class="col-md-3"> </div>
+    <div class="col-md-3"> </div>
+    </div>
+  </div>
+
+  <div class="w3-container bg-3 text-center w3-text-white w3-transparent">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand text-center" href="#">Portfolio Online</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Minha Historia.html" target="_blank">Minha História</a></li>
+            <li><a href="Origem.html" target="_blank">Origem</a></li>
+          </ul>
+        </li>-->
+          <li><a href="Curriculo.html" target="_blank">Curriculo online</a></li>
+            <li><a href="Contato.html" target="_blank">Contato</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Serviços<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Monitoria Escolar</a></li>
+            <li><a href="#">Criação de Sites</a></li>
+          </ul>
+      </li>
+      </ul>
+
+  <!--<form class="navbar-form navbar-left" action="/action_page.php">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+</header>
+    </head>
+<body class="portfolio">
+
+<!--<div class="jumbotron">-->
+  <div >
+  <img onmouseover="alert('Olá sou Dério Matheus. Estudante de Tecnologia da Informação, Estagiário de Gestão de Projetos e Desenvolvedor.');" src="Derio.jpg" alt="Avatar" class="w3-jumbo w3-circle w3-center-top" style="width:200px;height:200px">
+    <h1 class="w3-jumbo"><span class="w3-text-white">Derio Matheus</span></h1>
+  </div>
+</div>
+
+<hr>
+    <p class="w3-text-black jumbotron w3-blue">Olá pessoal vocês estão no meu portfólio, aproveite o máximo dele. Segue abaixo algumas informações sobre mim, mas voc&ecirc; é recrutador pode ver o meu cv no menu acima, veja minhas habilidades completas e muito mais, para isso basta da um <b>click</b> em <strong>"Meu CV" na aba "Sobre"</strong>). Como na imagens abaixo.</b> Agora se &eacute; usuário da pagina que procura algo, procure no menu acima e divertasse. Existe diversas categorias de serviços, projetos que terão no futuro e outros que estão existentes neste portfólio.</p>
+    
+   <div class="responsive">
+  <div class="gallery w3-text-white">
+      <a target="_blank" href="tela1.jpg">
+    <img src="tela1.jpg" width="300" height="200"/>
+      </a>
+  </div>
+</div>
+    
+    <div class="responsive">
+  <div class="gallery w3-text-white">
+      <a target="_blank" href="tela2.jpg">
+    <img src="tela2.jpg" width="300" height="200"/>
+      </a>
+  </div>
+</div>
+    
+    <div class="responsive">
+  <div class="gallery w3-text-white">
+      <a target="_blank" href="tela3.jpg">
+    <img src="tela3.jpg" width="300" height="200"/>
+      </a>
+  </div>
+</div>
+    <div class="responsive">
+  <div class="gallery w3-text-white">
+      <a target="_blank" href="telaCV.jpg">
+    <img src="telaCV.jpg" width="300" height="200"/>
+      </a>
+  </div>
+</div>
+     <br><br><br>
+      <br>
+      <br>
+    
+
+  <div class="row">
+  <div class="w3-padding-large" id="main"><br><br><br><br><br><br>
+      <!-- Header/Home -->
+    <h2 class="w3-padding-16 w3-text-white">Minhas Habilidades</h2>
+
+    <h3 class="w3-wide w3-text-white">Gestão de Operações</h3>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+
+    <h3 class="w3-wide w3-text-white">Web Design</h3>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+
+    <h3 class="w3-wide w3-text-white">Java</h3>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+
+    <h3 class="w3-wide w3-text-white">C#</h3>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:67%"></div>
+    </div>
+
+    <h3 class="w3-wide w3-text-white">Python</h3>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:15%"></div>
+        </div>
+    <h3 class="w3-wide w3-text-white">Games</h3>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:10%"></div>
+        </div>
+    <h3 class="w3-wide w3-text-white">Mobile</h3>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height:28px;width:3%"></div>
+        </div>
+    </div><br>
+<!-- Start photo grid -->
+
+<h2 class="w3-text-white"> Galeria de Imagens</h2>
+
+<div class="responsive">
+  <div class="gallery w3-text-white">
+    <a target="_blank" href="Familia.jpg">
+    <img onmouseover="alert('Olá esta é minha Família.');" src="Familia.jpg" width="300" height="200"/>
+    </a>
+    <!--<div class="desc">Derio e Familia</div>-->
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery w3-text-white">
+      <a target="_blank" href="Derio4.jpg">
+    <img onmouseover="alert('Olá este sou eu.');" src="Derio4.jpg" width="300" height="200"/>
+      </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery half w3-text-white">
+    <a target="_blank" href="Derio7.jpg">
+    <img onmouseover="alert('Olá este sou eu de novo.');" src="Derio7.jpg" width="300" height="200"/>
+    </a>
+  </div>
+</div>
+  </div>
+
+<div>
+    <details contenteditable="summary">
+        <summary class="w3-text-white"><h1>Aprendizados</h1></summary><br/>
+	<div class="w3-row-padding w3-text-white" style="margin:0 -16px">
+            <h2 >Linguagens e ferramentas de conhecimento</h2><br/>
+			<hr style="width:812px" class="w3-opacity">
+				<ol >
+					<li><h3>Java</h3></li>
+					<li><h3>PHP</h3></li>
+					<li><h3>Python</h3></li>
+					<li><h3>Android Studio</h3></li>
+					<li><h3>Eclipse</h3></li>
+					<li><h3>Netbeans</h3></li>
+					<li><h3>MySQL</h3></li>
+					<li><h3>SQLite</h3></li>
+					<li><h3>Dev C++</h3></li>
+					<li><h3>JavaFX</h3></li>
+					<li><h3>Code Blocks</h3></li>
+					<li><h3>Borland delphi</h3></li>
+				</ol>
+			</details>
+  <!-- End About Section -->
+  </div>
+    </div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<div class="container-fluid w3-text-justify w3-text-white
+     w3-transparent" id="portfolio">
+  <div class="row">
+    <!--<div class="w3-container">-->
+      <h1>Minha História em poucos detalhes</h1>
+
+            <p>Eu sou Derio Matheus, Estudante de Tecnologia da Informação,
+        Estagiário de Gestão de Projetos e Desenvolvedor de sistemas;
+        Tenho muitos conhecimentos em áreas de ciências exatas,
+        um pouco de lingua portuguesa e outros. Tenho 21 anos, <strong>sei que
+        nada é fácil, mas com contigo <b>Senhor</b> faço a diferença a
+        onde for;</strong> nascido no Gama-DF, Brasilia, Brasil; tenho vivido e vencendo
+        mesmo com problema, preseguições, lutas, em fim, com a certeza de vencer
+        tudo, locais onde já morei veja abaixo:</p>
+    <h4>Lunabel</h4>
+    <div class="embed-responsive embed-responsive-100x400px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15334
+                .249094161845!2d-48.07383042160616!3d-16.088188871906137!2m3!1f0
+                !2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9359821e7098dcc7%3
+                A0x94f9dbe9824b84b9!2sLunabel%2C+Novo+Gama+-+GO!5e0!3m2!1spt-BR
+                !2sbr!4v1514303559722" width="400" height="300" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+              </div>
+    <h4>Gama</h4>
+    <div class="embed-responsive embed-responsive-100x400px">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245470.
+            4992852917!2d-48.28210483516285!3d-15.988689203330368!2m3!1f0!2f0!
+            3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bd43570b84923%3A0x3118
+            f578b04afb73!2sGama%2C+Bras%C3%ADlia+-+DF!5e0!3m2!1spt-BR!2sbr!4v
+            1514303494587" width="400" height="300" frameborder="0"
+            style="border:0" allowfullscreen></iframe>
+          </div>
+    <h4>Santa Maria</h4>
+    <h5>Observação</h5>
+        <span>Este Local que eu moro a mais 14 anos</span>
+    <div class="embed-responsive embed-responsive-100x400px">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245468.
+            7059627204!2d-48.06822903507978!3d-15.990149999626793!2m3!1f0!2f0!
+            3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935987e464b5862f%3A0x7434
+            33d9e213dce9!2sSanta+Maria%2C+Bras%C3%ADlia+-+DF!5e0!3m2!1spt-BR!
+            2sbr!4v1514303648069" width="400" height="300" frameborder="0"
+            style="border:0" allowfullscreen></iframe>
+          </div>
+    <h4>Recanto das Emas</h4>
+    <div class="embed-responsive embed-responsive-100x400px">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245506.
+            76437144773!2d-48.23959556641953!3d-15.959120615984189!2m3!1f0!2f
+            0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bd3e78b00cab3%3A0xca
+            9ff3043ba99913!2sRecanto+das+Emas%2C+Bras%C3%ADlia+-+DF!5e0!3m2!1
+            spt-BR!2sbr!4v1514303767257" width="400" height="300"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      
+      <!-- Page Content -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<div class="container-fluid bg-3 w3-text-right w3-text-white
+     w3-transparent" id="portfolio">
+  <div class="row">
+    <!--<div class="w3-container">-->
+
+    <div class="w3-text-center">
+    <h1>Origem do Meu Nome</h1>
+    <p>O vídeo de divulgação abaixo mostra um desenho
+        chamado WishKid no termo inglês(português de
+        portugual Criança Desejo) no Brasil Perdido nas
+        Estrelas, conta como um garoto pede seus desejos
+        e as estrelas realizar mais do que é pedido onde
+        acaba em grandes confusões tenho um prazo de válidade
+        para cada um de seus desejos, esse menino que pede
+        seus desejos é Nicolas, que nas séries é conhecido
+        como Macaulay Culkin, mais à um personagem chamado
+        Derion a inspiração do meu nome é amigo deste garoto
+        que é levado; de classe média, cheio de brincadeiras
+        e manias.</p>
+
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ONQKvIIpPzA"
+            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <figcaption class="w3-text-blue">Perdido nas Estrelas (Wish Kid) - Um Piloto Top Gun
+    </figcaption>
+    </div>
+    </div>
+
+    <h2>Galeria de Bandeiras</h2>
+    <div class="w3-container">
+    <div class="responsive">
+  <div class="gallery w3-text-white" id="galery">
+      <a target="_blank" href="Espanha.png">
+          <img src="Espanha.png" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Bandeira: Espanha</div>
+  </div>
+</div>
+
+         <div class="responsive">
+  <div class="gallery w3-text-white" id="galery">
+      <a target="_blank" href="Deriobandera.png">
+          <img src="Deriobandera.png" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Bandeira de Derio</div>
+  </div>
+</div>
+        </div>
+
+    <hr>
+
+    <div>
+  <h1>Descoberta aos 17 anos</h1>
+  <p>Depois da minha origem do meu nome ser descoberta aos 13 para
+      14 anos, teve outra descoberta que meu nome era um município
+      da Espanha na provícia da Biscaia, na comunidade autónoma do
+      País Basco isso foi aos 17 anos.</p>
+  <br>
+
+
+      <h4>Hino da Espanha</h4>
+        <audio controls>
+            <source src="Marcha_Real-Royal_March_by_US_Navy_Band.ogg.mp3"
+                    type="audio/mpeg">
+        </audio>
+
+      <br>
+
+          <h2>Veja os principais fatos rápidos</h2>
+
+    <p>Derio é um município da Espanha na província da Biscaia, comunidade autónoma
+ do País Basco, com 10,7 km² de área. Em 2016 tinha 6 154 habitantes.
+    <a href="https://pt.wikipedia.org/wiki/Derio"</a>Wikipédia</p>
+
+
+    <h5>Localização de Derio</h5>
+     <div class="responsive">
+  <div class="gallery w3-text-white" id="galery">
+      <a target="_blank" href="Biscaia.png">
+          <img src="Biscaia.png" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Bandeira de Biscaia</div>
+  </div>
+</div>
+</div>
+  <div class="embed-responsive embed-responsive-100x400px">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11615.57039124763!2d-2.8969438565409797!3d43.29557083365526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4589abd07703%3A0xd6fd60b46fef792f!2sDerio%2C+Biscaia%2C+Espanha!5e0!3m2!1spt-BR!2sbr!4v1514474959260"width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+  </iframe>
+      </div>
+      
+      <p></p>
+        <h1>Minhas Conclusões</h1>
+    <p>Enfim minha vida tem sido diferente a cada dia com novas
+    descobretas e transformações, sei que preciso melhorar mais e mais, com certeza da <strong>Fé</strong> que muda tudo, e que Deus transforma, sempre estará comigo. Agradeço a Deus por tudo que ele tem me dado, sei que ele poderoso e me ajuda sempre vai me guiar, com isso sigo em frente em busca dos meus objetivos e sonhos.</p>
+  </div><br>
+
+      <h2>Agradecimentos</h2>
+       <p class="w3-text-justify">Agradeço a <b>Deus</b> por tudo que ele tem me dado, sei que ele poderoso e me ajuda sempre vai me guiar, com isso sigo em frente em busca das minha realizações.</p>
+
+        </div>
+  </div>
+ </div>
+</div>
+</div>
+  <hr>
+<p>Notícia disponível em:<a href=https://www.superestagios.com.br/index/noticias/exibeNoticia.php?id=122>
+    Super Estágios</a>, Acesso em: 12 dez. 2017. </p>
+  </div>
+
+</div>
+</div>
+
+  <!-- End Section -->
+
+  <footer class=" w3-center w3-text-black dp_footer" id="Contact">
+      
+        <!-- Contacts section start -->
+    <div class="section copyright" id="contacts">
+            <div><p>Seguia-me<small><a href="https://twitter.com/derio77" target="_blank">
+                <img alt="Twitter" src="Twitter_I_icon-icons.com48.png" /></a><a href="https://www.facebook.com/derio.Daylon" target="_blank">
+                <img alt="Facebook" src="Facebook_icon-icons.com48.png"/></a>
+                <a  href="https://www.instagram.com/daylon_0_n_1/" target="_blank"><img alt="Instagram" src="Instagram_icon-icons.com48.png" /></a>
+                <a href="https://www.linkedin.com/in/derio-matheus-4a1220129/" target="_blank"><img alt="Linkendin" src="linkedin_icon-icons.com_49942.png" /></a></small></p>
+        <!-- Contacts section end -->
+        <p><small>&copy; Derio Matheus 2018 portfolio. Direitos reservados.V_4.7</small></p></div></div>
+      </div>
+    </footer>
+</body>
+</html>
+
+<!--Menu sisclinica-->
+<!--<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">SisClinica</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#about">Institucional</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Paciente <b class="caret"></b>
+          </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.php?pagina=listar_paciente.php">Listar Paciente</a></li>
+                    <li><a href="index.php?pagina=incluir_paciente.php">Incluir Paciente</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>-->

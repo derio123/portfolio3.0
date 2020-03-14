@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<span class="s1"><div class="splash fade-in">
+</span>  <h1 class="splash-title fade-in">Bem Vindo</h1>
+<a href="#" class="splash-arrow fade-in"><img src="pc.png" alt=""/>Blog Line</a>
+    <p>Role para baixo<img src="https://png.icons8.com/color/50/000000/double-down.png" alt="" />
+    </p>
+    </div> <!-- END .splash -->
+<div class="wrapper">
+<!-- COLOQUE A DIV "loading" ACIMA DE TODO O CONTEUDO DO SITE (ABAIXO DA <body>) -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blog Line</title>
+                <link rel="icon" href="pc.png">
+		<meta name="description" content="A sidebar menu as seen on the Google Nexus 7 website" />
+		<meta name="keywords" content="google nexus 7 menu, css transitions, sidebar, side menu, slide out menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="ckeditor/ckeditor.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link href="css/album.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--script type="text/javascript" src="https://coolcarousels.frebsite.nl/c/2/jquery.carouFredSel-5.5.5-packed.js"></script-->
+    <!--script src="http://connect.facebook.net/pt_BR/all.js#xfbml=1"></script-->
+
+  <style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif} <!--Toda pagina será estilizada-->
+
+     /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar { margin-bottom: 10; border-radius: 10;}
+
+    /* Add a gray background color and some padding to the footer */
+      footer { background-color: #000;
+      clear:both; width:300px; margin:0 auto;
+      font-size:0.95em; text-align:center; padding:0px }
+
+    /*.carousel-inner img {min-height: 100px;}*/
+
+    .w3-theme-dark {color:#d4b922 !important;}
+    .w3-hover-theme:hover {color:#fff !important; background-color:#2294cb !important}
+    .w3-hover-text-theme:hover {color:#1ca6e8 !important}
+    .w3-hover-border-theme:hover {border-color:#35d8de !important}
+
+    /*Comentários*/
+    body {
+    padding: 50px 100px;
+    font-size: 13px;
+    font-family: arial, Tahoma, sans-serif;
+}
+
+a { color:#000; }
+
+h2 {
+    margin-bottom: 20px;
+    color: #133141;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    width: 200px;
+    color: #999999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+textarea {
+    width: 400px;
+    height: 150px;
+    max-width: 400px;
+    line-height: 18px;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: 1px solid #C9C9C9;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+.form label {
+    margin-bottom: 10px;
+    color: #999999;
+    display: block;
+}
+.submit input {
+    width: 100px;
+    height: 40px;
+    background-color: #133141;
+    color: #FFF;
+    border-radius: 3px;
+    moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+  .portfolio{
+      background-image: url('flisol_chamada_siteoficial.png');
+    background-repeat: round;/*round = volta*/
+      /*color: ;*/
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0; }
+      .responsive {padding: 0 6px;float: left;width: 24.99999%;}
+
+@media only screen and (max-width: 700px){
+    .responsive {width: 49.99999%;margin: 6px 0;}}
+
+@media only screen and (max-width: 500px){
+    .responsive {width: 100%;}}
+
+.clearfix:after {content: "";display: table;clear: both;}
+
+.responsive {padding: 0 6px;float: top;width: 24.99999%;}
+
+.embed-responsive-100x400px{padding-bottom: 350px;}
+.clearfix:after {content: "";display: table;clear: both;}
+
+.embed-responsive-100x400px{padding-bottom: 350px;}
+    .section {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    /*Botão de voltar ao topo*/
+  .voltar-ao-topo {
+            position: fixed;
+            bottom: 2em;
+            right: 10em;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            padding: 1em;
+            display: none;
+        }
+        .voltar-ao-topo:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+            /*Splash */
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+  .splash  {
+ background: url('../img/splash-bg.jpg') center center;
+     background-size: cover;
+     background-attachment: fixed;
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     min-height: 360px;
+     z-index: 999;
+     text-align: center;
+ }
+ html, body {   width: 100%;
+    height: 100%;}
+
+body { font: normal 1em/1.5em 'Open Sans', sans-serif; color: #333; margin-bottom: 20px; }
+    .wrapper {max-width: 1000px; width: 90%;margin: 0 auto; }
+
+.splash-title {color: white;font-size: 3em;margin-top: 100px;text-shadow: 0 2px 10px #000;
+    -webkit-animation-delay: 1s;-moz-animation-delay: 1s;animation-delay: 1s;}
+
+a.splash-arrow {color: white; font-size: 1.2em; position: absolute;
+    bottom: 55px;left: 50%; margin-left: -25px;
+    padding: 10px; width: 50px;
+    height: 50px;font-weight: bold;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    border: 3px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+a.splash-arrow:hover {
+    text-decoration: none;
+    bottom: 50px;
+}
+
+@media all and (max-width: 690px) {
+    header h1 { width: 100%; text-align: center; }
+    header nav { float: none; display: inline-block; margin: 0 auto; }
+      .splash-title {font-size: 2em;}
+
+@media all and (max-width: 480px) {
+    .splash-title {font-size: 1.5em;}
+}
+</style>
+<script>
+    $(document).ready(function() {
+    if($(".splash").is(":visible")) {
+        $(".wrapper").css({"opacity":"0"});
+    }
+
+    $(".splash-arrow").click(function() {
+        $(".splash").slideUp("800", function() {
+            $(".wrapper").delay(100).animate({"opacity":"1.0"},800);
+        });
+    });
+});
+
+$(window).scroll(function() {
+    $(window).off("scroll");
+    $(".splash").slideUp("800", function() {
+        $("html, body").animate({"scrollTop":"0px"},100);
+        $(".wrapper").delay(100).animate({"opacity":"1.0"},800);
+    });
+});
+    </script>
+
+<script>
+    var i = setInterval(function () {
+    clearInterval(i);
+
+    // O código desejado é apenas isto:
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("content").style.display = "block";
+
+}, 2000);
+
+</script>
+
+	</head>
+        <!-- Alert Box
+      <!--div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>-->
+        <body class="portfolio">
+
+                <!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-black">
+        <div class="w3-container">
+         <h4 class="w3-center">Meu Prefil</h4>
+         <p class="w3-center"><img src="Derio1.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <h4 style="clear:left"><span class="w3-text-white">Derio Matheus</span></h4>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Desenvlovedor web, Mobile....</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Brasilia, DF</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> December 6, 1996</p>
+        </div>
+      </div>
+      <br>
+
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-black">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Meu Grupos</button>
+          <div id="Demo1" class="w3-hide w3-container">
+
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>Meus Projetos</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <div>
+                <p></p>
+              </div>
+          </div>
+          <button onclick="myFunction('Demo7')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>Videos do Projetos</button>
+          <div id="Demo7" class="w3-hide w3-container">
+            <div>
+                <p></p>
+              </div>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i>Fotos de Projetos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+
+         <br>
+
+           <!--<div class="w3-half">
+               <img src="#" style="width:100%" class="w3-margin-bottom">
+           </div>-->
+           <!--<div class="w3-half">
+               <img src="#" style="width:100%" class="w3-margin-bottom">
+           </div>-->
+           <div class="w3-half">
+               <img src="flisol_chamada_siteoficial.png" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!-- Interests -->
+      <div class="w3-card w3-round w3-black w3-hide-small">
+        <div class="w3-container">
+          <p>Interesses</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Jesus</span>
+            <span class="w3-tag w3-small w3-theme-d4">Family</span>
+            <span class="w3-tag w3-small w3-theme-d3">GirlFriend</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Mobile/PWA/APPs</span>
+            <span class="w3-tag w3-small w3-theme">WEB/Site/Portfolio</span>
+            <span class="w3-tag w3-small w3-theme-l1">Java/Python/Backend</span>
+            <span class="w3-tag w3-small w3-theme-l2">C++/C#/Frontend</span>
+            <span class="w3-tag w3-small w3-theme-l3">3D Modeling</span>
+            <span class="w3-tag w3-small w3-theme-l4">Project</span>
+            <span class="w3-tag w3-small w3-theme-l5">Others</span>
+          </p>
+        </div>
+      </div>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+
+      <!--<div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-black">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">*Blog Line</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+      <div class="w3-container w3-card w3-black w3-round w3-margin"><br>
+          <img src="Derio2.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>Derio Matheus</h4><br>
+        <hr class="w3-clear">
+        <p>Em Breve novidades.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="" style="width:100%" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="" style="width:100%" class="w3-margin-bottom">
+          </div>
+        </div>
+        <!--<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><fb:like href= http://www.deriomatheus.com " layout="standard" show-faces="true" width="450" action="like" colorscheme="w3-theme-dark" /><i class="fa fa-thumbs-up"></i></button>-->
+
+        <button onclick="myFunction('Demo4')" type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comentar</button>
+        <div id="Demo4" class="w3-hide w3-container">
+            <form class="w3-text-black">
+               <p>Nome: <input name="name" placeholder="Name" type="text" required /></p><br/>
+                <p>Email: <input name="email" placeholder="Email" type="email" required /></p><br/>
+                <p>Deixe sua Messagem: <textarea name="message" type="text" placeholder="Message" required ></textarea></p>
+                <input autofocus type="submit" value="SEND" class="submit" />
+            </form>
+      </div>
+
+      <div class="w3-container w3-card w3-black w3-round w3-margin"><br>
+          <img src="Derio2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Derio Matheus</h4><br>
+        <hr class="w3-clear">
+        <p> Agora se &eacute; usuário da pagina que procura algo,
+    procure no menu acima e divertasse. Existe diversas categorias de serviços, projetos
+     futuros e outros que estão existentes neste portfólio.</p></p>
+     <!--<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>-->
+        <button onclick="myFunction('Demo5')" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comentar</button>
+          <div id="Demo5" class="w3-hide w3-container">
+            <form class="w3-text-black">
+               <p>Nome: <input name="name" placeholder="Name" type="text" required /></p><br/>
+                <p>Email: <input name="email" placeholder="Email" type="email" required /></p><br/>
+                <p>Deixe sua Messagem: <textarea name="message" type="text" placeholder="Message" required ></textarea></p>
+                <input autofocus type="submit" value="SEND" class="submit" />
+            </form>
+      </div>
+
+      <div class="w3-container w3-card w3-black w3-round w3-margin"><br>
+          <img src="Derio2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Derio Matheus</h4><br>
+        <hr class="w3-clear">
+        <p>Em Breve novidades.</p>
+        <!--<img src="#" style="width:100%" class="w3-margin-bottom">-->
+        <!--texto-->
+        <!--<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>-->
+        <button onclick="myFunction('Demo6')" type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> Comentar</button>
+        <div id="Demo6" class="w3-hide w3-container">
+            <!--<form method="post" onsubmit="validaForm(); return false;" class="form">-->
+               <form class="w3-text-black">
+               <p>Nome: <input name="name" placeholder="Name" type="text" required /></p><br/>
+                <p>Email: <input name="email" placeholder="Email" type="email" required /></p><br/>
+                <p>Deixe sua Messagem: <textarea name="message" type="text" placeholder="Message" required ></textarea></p>
+                <input autofocus type="submit" value="SEND" class="submit" />
+            </form>
+      </div>
+
+    <!-- End Middle Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-black w3-center">
+        <div class="w3-container">
+          <p>Próximos Eventos:</p>
+          <img src="http://flisoldf.blog.br/2018/wp-content/themes/flisoldf/assets/images/logo.png" alt="Forest" style="width:100%;">
+          <p><strong>Flisol-DF</strong></p>
+          <p>Sábado | 28 de Abril | 08h:00</p>
+          <!--<p><button class="w3-button w3-block w3-theme-l4">Info</button></p>-->
+          <div class="embed-responsive embed-responsive-100x400px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1
+          d7677.769836485029!2d-48.125287!3d-15.810020999999999!3m2!1i1024!
+          2i768!4f13.1!3m3!1m2!1s0x0%3A0x79640388ffba5890!2sCentro+Universi
+          t%C3%A1rio+IESB!5e0!3m2!1spt-BR!2sus!4v1521823030610" width="600"
+          height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <span>Link de Inscrição abaixo:</span>
+          <button type="button" class="w3-button w3-theme-border w3-margin-bottom"><i class="fa fa-calendar-check-o"></i>
+          <a href="http://flisoldf.blog.br/2018/2018/03/palestra-empreender-e-inovar-producao-de-conteudo-beginners/"> Flisol-DF</a></button>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-card w3-round w3-black w3-center">
+        <div class="w3-container">
+          <p>Requisição de Amizade</p>
+          <img src="https://scontent.fbsb12-1.fna.fbcdn.net/v/t1.0-1/c0.0.446.446/29541141_110557589790274_3492504126844946527_n.jpg?_nc_cat=0&amp;oh=0d8e221eff1e1032ce862c46ae423bd6&amp;oe=5B2EBA6D" alt="" class="img w3-left w3-circle w3-margin-right" style="width: 50px; height: 50px;">
+          <span>Tadeu</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Aceita"><i class="fa fa-check"></i><a href="https://www.facebook.com/tadeu.palermo.ti"></a></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Rejeitar"><i class="fa fa-remove"></i><a href="https://www.facebook.com/tadeu.palermo.ti"></a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-card w3-round w3-black w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+
+      <div class="w3-card w3-round w3-black w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+<!-- End Page Container -->
+</div>
+<br>
+<a href="#" class=”voltar-ao-topo”>
+    <img src="https://png.icons8.com/color/50/000000/double-up.png" alt="">Volta ao topo</a>
+
+<script>
+  jQuery(document).ready(function() {
+            // Exibe ou oculta o botão
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 200) {
+                    jQuery('.voltar-ao-topo').fadeIn(200);
+                } else {
+                    jQuery('.voltar-ao-topo').fadeOut(200);
+                }
+            });
+
+            // Faz animação para subir
+            jQuery('.voltar-ao-topo').click(function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, 300);
+            })
+        });
+</script>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16 w3-container">
+    <div class="section" id="contacts">
+         <a href="https://twitter.com/derio77" target="_blank">
+                <img alt="Twitter" src="Twitter_I_icon-icons.com48.png" />
+            </a>
+            <a href="https://www.facebook.com/derio.Daylon">
+                <img alt="Facebook" src="Facebook_icon-icons.com48%20(1).png"/>
+            </a>
+            <a href="https://www.instagram.com/daylon_0_n_1/">
+                <img alt="Instagram" src="Instagram_icon-icons.com48.png" />
+            </a>
+
+        </div>
+        <small class="w3-text-white">&copy;Blog Line 2018</small></small>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+//Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else {
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }}
+</script>
+            </div> <!-- END .wrapper-->
+	</body>
+        </div>
+</html>

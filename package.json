@@ -1,0 +1,8 @@
+{
+    "name": "Siteblog",
+    "version": "1.1.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "derio.costa",
+    "contributors": [],
+    "dependencies": {}
+}

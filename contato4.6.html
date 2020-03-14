@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Derio|Portólio 2017</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="pc.png"> 
+
+  <script src="ckeditor/ckeditor.js"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link href="css/album.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://coolcarousels.frebsite.nl/c/2/jquery.carouFredSel-5.5.5-packed.js"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar { margin-bottom: 10; border-radius: 10;}
+    
+    /* Add a gray background color and some padding to the footer */
+  footer { background-image: url('índice.jpg');padding: 5px;}
+    /*.carousel-inner img {min-height: 100px;}*/
+
+  .portfolio{
+  background-image: url('Digital-Android-Logo-4K-Wallpaper-2560x1440.jpg');
+    background-repeat: inherit;/*round = volta*/
+      color: black;
+      left: 0;
+      overflow: auto;
+      padding: 3em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0; }
+  
+  div.gallery {border: 1px solid #ccc;}
+
+  div.gallery:hover {border: 1px solid #0000ff;}
+
+div.gallery img {width: 100%;height: auto;}
+
+div.desc { padding: 15px;text-align: center;}
+
+* {box-sizing: border-box;}
+
+.responsive {padding: 0 6px;float: left;width: 24.99999%;}
+
+@media only screen and (max-width: 700px){
+    .responsive {width: 49.99999%;margin: 6px 0;}}
+
+@media only screen and (max-width: 500px){
+    .responsive {width: 100%;}}
+
+.clearfix:after {content: "";display: table;clear: both;}
+
+body {padding: 0;margin: 0;}
+
+form {font-family: Verdana,Tahoma,sans-serif;font-size: 15px;background-color: #CC3300;
+ max-width: 500px;}
+
+h1 {margin-bottom: 20px;margin-left: 20px;color: #66FFFF;text-shadow: 5px 5px 5px black;}
+
+input, textarea {width: 200px;padding: 10px;color: black;margin-left: 20px;
+-webkit-border-radius: 5px;-moz-border-radius: 5px;border: 1px solid;}
+
+input:hover, textarea:hover, input:focus, textarea:focus {border-color: #000066;box-shadow: 5px 0px 9px #FFFF00;background-color: #66FFFF;color: black;font-weight: bold;}
+
+.submit input {background-color: #66FFFF;height: 40px;width: 100px;font-weight: bold;
+border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;
+border: 1px solid;color: black;}
+
+textarea {width: 400px;height: 120px;line-height: 20px;max-width: 400px;}
+
+form label {margin-left: 20px;color: #FFFFFF;font-weight: bold;}
+
+.formulario{ float:left; width:100%; height:auto; font-family: 'OpenSans', sans-serif;}
+.formulario ul{display: table; margin:10px 0 10px 18%;}
+.formulario ul li{float: none; list-style: none; margin: 0 30px 5px 0; }
+
+.formulario label{ width:20%; float:left; text-align:right; padding:10px 15px 0 0;}
+.formulario label.error { float: none; position: relative; top:-5px; left:21%; color: #f00; vertical-align: top; font-size: 12px; text-align: left; display: block; border-left:3px solid #f00;  padding: 0px 0 0 5px; margin: 0 0 5px 0;}
+
+.formulario input{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none; 
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;} 
+.formulario input:focus{border:1px solid #bab9b9; background: #f4f4f4;}
+.formulario input.g{ width:50%;}
+.formulario input.m{ width:30%;}
+.formulario input.p{ width:15%;}
+.formulario input.pp{ width:5%;}
+
+.formulario select{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none;
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;}
+.formulario select:focus{border:1px solid #bab9b9; background: #f4f4f4;}
+.formulario select.g{ width:50%;}
+.formulario select.m{ width:30%;}
+.formulario select.p{ width:15%;}
+.formulario select.pp{ width:5%;}
+
+.formulario textarea{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none;
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;}
+.formulario textarea:focus{border:1px solid #bab9b9; background: #f4f4f4;}
+.formulario textarea.g{ width:50%;}
+.formulario textarea.m{ width:30%;}
+.formulario textarea.p{ width:15%;}
+.formulario textarea.pp{ width:5%;}
+
+.formulario input[type="radio"]{ float: left; margin:1px 5px 0 0;}
+.formulario input[type="checkbox"]{ float: left; margin:1px 5px 0 0;}
+
+.formulario input[type="submit"]{float:left; border-radius:5px; padding:10px 20px 10px 20px; margin:20px 0 20px 66%; background: #000; border:solid 0px; color:#fff; cursor:pointer;}
+.formulario input[type="submit"]:hover{background: #666;}
+
+/*================================================================================================================================
+ FORMULARIO RESPONSIVO 
+==================================================================================================================================*/
+/* RESOLUÇÃO TABLETS 10" */
+
+@media only screen and (max-width:989px){
+	.formulario{ float:none; width:80%; margin:auto;}
+	.formulario ul{margin:10px 0 10px 0%;}
+	.formulario label{width: 100%; text-align: left; float: none; margin:0 0 7px 0; display: block;}
+	.formulario label.error {left:0%;}
+
+	.formulario input.g{ width:80%;}
+	.formulario input.m{ width:60%;}
+	.formulario input.p{ width:50%;}
+	.formulario input.pp{ width:30%;}
+
+	.formulario select.g{ width:80%;}
+	.formulario select.m{ width:60%;}
+	.formulario select.p{ width:50%;}
+	.formulario select.pp{ width:30%;}
+
+	.formulario textarea.g{ width:80%;}
+	.formulario textarea.m{ width:60%;}
+	.formulario textarea.p{ width:50%;}
+	.formulario textarea.pp{ width:30%;}
+	}
+
+/*================================================================================================================================
+ DATAPICKER CALENDARIO
+==================================================================================================================================*/
+
+.Zebra_DatePicker *,
+.Zebra_DatePicker *:after,
+.Zebra_DatePicker *:before  {font-family: 'OpenSans', sans-serif; -moz-box-sizing: content-box !important; -webkit-box-sizing: content-box !important; box-sizing: content-box !important }
+
+.Zebra_DatePicker           { position: absolute; background: #FFF; border: 1px solid #999; z-index: 1200; padding: 5px; top: 0; margin:140px 0 0 0;}
+
+.Zebra_DatePicker *         { margin: 0; padding: 0; color: #373737; background: transparent; border: none }
+
+.Zebra_DatePicker table                      { border-collapse: collapse; border-spacing: 0; width: auto; table-layout: auto; }
+
+.Zebra_DatePicker td,
+.Zebra_DatePicker th                         { text-align: center; padding: 5px 0 }
+
+.Zebra_DatePicker td                         { cursor: pointer }
+
+.Zebra_DatePicker .dp_daypicker,
+.Zebra_DatePicker .dp_monthpicker,
+.Zebra_DatePicker .dp_yearpicker             { margin-top: 3px }
+
+.Zebra_DatePicker .dp_daypicker td,
+.Zebra_DatePicker .dp_daypicker th,
+.Zebra_DatePicker .dp_monthpicker td,
+.Zebra_DatePicker .dp_yearpicker td         { width: 30px }
+
+.Zebra_DatePicker,
+.Zebra_DatePicker .dp_header .dp_hover,
+.Zebra_DatePicker td.dp_selected,
+.Zebra_DatePicker .dp_footer .dp_hover,
+.Zebra_DatePicker td.dp_hover               { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
+
+/* VISIBLE/HIDDEN STATES (USE TRANSITIONS FOR EFFECTS) */
+
+.Zebra_DatePicker.dp_visible               { visibility: visible; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1; opacity: 1; transition: opacity 0.2s ease-in-out }
+.Zebra_DatePicker.dp_hidden                { visibility: hidden; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0; opacity: 0 }
+
+/* HEADER CALENDARIO */
+
+.Zebra_DatePicker .dp_header td             { }
+
+.Zebra_DatePicker .dp_header .dp_previous,
+.Zebra_DatePicker .dp_header .dp_next       { width: 30px }
+
+.Zebra_DatePicker .dp_header .dp_caption    { font-weight: bold }
+.Zebra_DatePicker .dp_header .dp_hover      { background: #DEDEDE; color: #373737 }
+
+/* DATEPICKER */
+
+.Zebra_DatePicker .dp_daypicker th              { font-weight: bold }
+.Zebra_DatePicker td.dp_not_in_month            { color: #DEDEDE; cursor: default }
+.Zebra_DatePicker td.dp_not_in_month_selectable { }
+.Zebra_DatePicker td.dp_weekend                 { }
+.Zebra_DatePicker td.dp_weekend_disabled        { color: #DEDEDE; cursor: default }
+.Zebra_DatePicker td.dp_selected                { background: #ccc; color: #FFF !important }
+.Zebra_DatePicker td.dp_week_number             { cursor: text; font-weight: bold }
+
+/* MESES */
+
+.Zebra_DatePicker .dp_monthpicker td    { width: 33% }
+
+/* ANOS */
+
+.Zebra_DatePicker .dp_yearpicker td     { width: 33% }
+
+/* FOOTER */
+
+.Zebra_DatePicker .dp_footer            { margin-top: 3px }
+
+/* SOME MORE GLOBALS (MUST BE LAST IN ORDER TO OVERWRITE PREVIOUS PROPERTIES) */
+
+.Zebra_DatePicker td.dp_current             { color: #f00 }
+.Zebra_DatePicker td.dp_disabled_current    { color: #3A87AD }
+.Zebra_DatePicker td.dp_disabled            { color: #DEDEDE; cursor: default }
+.Zebra_DatePicker td.dp_hover               { background: #DEDEDE }
+
+/* ICON */
+
+button.Zebra_DatePicker_Icon   { display: block;position: absolute; width: 16px; height: 16px; background: none; text-indent: -9000px; border: none; cursor: pointer; padding: 0; line-height: 0; vertical-align: top }
+
+      
+      .section {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+          
+  </style>
+    <!-- ---------- -->
+    <div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Successo!</strong> Olá meu é Derio Matheus
+    <strong>Atenção!</strong>Esse é meu contato, fique traquilo e boa navegação.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".close").click(function(){
+        $("#myAlert").alert("close");
+        alert('The alert message is about to be closed.');
+    });
+});
+</script>
+
+<header class="w3-container-fluid w3-content w3-center" style="max-width:2000px">
+   <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3"> </div>
+    <div class="col-md-3"> </div>
+    <div class="col-md-3"> </div>
+    <div class="col-md-3"> </div>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand text-center" href="#">Portfolio 2017</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+    
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sobre<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Minha Historia.html">Minha História</a></li>
+            <li><a href="Origem.html">Origem</a></li>
+            <li><a href="Meu CV.html">Meu CV</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Serviços<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Monitoria Escolar</a></li>
+            <li><a href="#">Criação de Sites</a></li>
+          </ul>
+      <li><a href="index.html">Voltar</a></li>
+      </li>
+      </ul>
+</header>
+  <!--<form class="navbar-form navbar-left" action="/action_page.php">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form> 
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+    </div>
+  </div>
+</nav>
+
+    
+    
+</head>
+<body class="portfolio">
+    <!--Contact Section -->
+	   <form action="envia.php" name="envia" id="envia" method="post">
+			<h1>Entre em contato</h1>
+				<p class="nome">
+            <label for="nome">Nome</label>
+            <input type="text" id="nomeid" placeholder="Nome" required="required" name="nome" />
+        </p>
+        <p><label for="email">Email</label>
+            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" /></p>
+        
+        <p class="fone"><label for="fone">Fone</label>
+        <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" /></p>
+        
+        <p><label>Assunto</label>
+              <input name="" type="text" class="g" placeholder="Sugestão, Reclamações"></p>
+        
+        <p><label>Deixe a sua Mensagem</label>
+          <textarea placeholder="Deixe sua opnião" cols="5" rows="5" class="g"></textarea></p>
+        <p class="submit">
+            <input type="submit" onclick="Enviar();" value="Enviar" /></p>
+	       </form>
+        
+  <!--<div class="container">
+ <div class="alert alert-warning">
+  <strong>Warning!</strong>Esse é meu portfolio do TCD 2017 com ele você saberá mais sobre mim.-->
+
+<!--<script type="text/javascript">function Enviar() {
+
+    var nome = document.getElementById("nomeid");
+    if (nome.value != "") {
+        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+    }}
+</script>-->
+
+    <h3 class="w3-center w3-text-white">Agradecimentos</h3>
+        <p class="w3-center w3-text-white">Agradeço a Deus por tudo que ele tem me dado, sei que ele 
+    poderoso e me ajuda sempre vai me guiar, com isso sigo em frente em busca 
+    dos meus objetivos e sonhos.</p>
+         <p class="w3-center w3-text-white">Obrigado pelo o acesso, volte sempre !!!</p>
+
+  <!-- End Contact Section -->
+  <div>
+
+<footer class=" w3-center" id="Contact">
+          <h4>Redes Sociais</h4> 
+       <div class="section" id="contacts">
+            <div>
+                <a href="https://twitter.com/derio77" target="_blank">
+                <img alt="Twitter" src="Twitter_I_icon-icons.com48.png" />
+                </a>
+                <a href="https://www.facebook.com/derio.Daylon">
+                <img alt="Facebook" src="Facebook_icon-icons.com48.png"/>
+                </a>
+                <a  href="https://www.instagram.com/daylon_0_n_1/">
+                <img alt="Instagram" src="Instagram_icon-icons.com48.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/derio-matheus-4a1220129/">
+                <img alt="Linkendin" src="linkedin_icon-icons.com_49942.png" /></a>
+            </div>
+        </div>
+        <!-- Contacts section end -->
+      <div class="copyright">
+        &copy; Derio Matheus 2018 portfolio. Direitos reservados.V_4.6
+      </div>
+    </footer>
+</div>
+</body>
+</html>
